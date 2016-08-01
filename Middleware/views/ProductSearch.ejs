@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReShelf</title>
+    <% include lib.ejs %>
+  </head>
+  <body ng-app="amazon" ng-controller="amazon">
+    <% include menu.ejs %>
+    <div style="height: 50px; display: block;"></div>
+    
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-9" style="padding-left: 38px">
+          <% include search.ejs %>
+        </div><br>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="cat-list">
+            <div class="row">
+              <div class="col-lg-2">
+                    
+                    <!-- <h4>Refine By</h4><br>
+                    <h6>Brands</h6><br>
+                    <input class="form-control" id="inputdefault" type="text">
+                    <div class="btn-group" >
+                  
+
+                  <ul class="scrollable-menu" role="menu">
+                      <li><a href="#">Brand</a></li>
+                      <li><a href="#">Brand1</a></li>
+                      <li><a href="#">Brand2</a></li>
+                      <li><a href="#">Brand3</a></li>
+                      <li><a href="#">Brand4</a></li>
+                      <li><a href="#">Brand5</a></li>
+                      
+                  </ul><br><br>
+
+                              <h5>Speciality</h5>   
+              <div class="checkbox" style="font-size: 17px;">
+        <label><input type="checkbox" style="font-size: 17px;" value="">Organic </label>
+        </div>
+
+              </div> -->
+
+              </div>
+              <div class="col-lg-10">
+                <% include product.ejs %>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <% include cart.ejs %>
+        </div>
+      </div>
+    </div>    
+  </div>   
+
+<!-- 
+        Vansh Shah -->
+
+        
+    <!--<% include footer.ejs %>-->
+    
+    <% include js-lib.ejs %>
+
+  </body>
+
+</html>
